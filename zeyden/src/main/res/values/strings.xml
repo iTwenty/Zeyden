@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Hello, World!</string>
+    <string name="app_name">Zeyden</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="placement_services_desc">
+        <p><b>Zeyden Placement Services</b> leader in  recruitment services, provides tailor- made recruitment solutions to the clients. Thorough research and accurate mapping of interests of both, our clients, as well as, our candidates, is what sets us apart.</p>
+        <p><b>Zeyden Placement Services</b> is committed to assist organizations add to their productivity through timely and relevant recruitments. We enable organizations to build high performance teams and leaders.</p>
+        <p>As a corporate partner to clients, we source professionals with high intellectual capabilities to help enhance the client\'s human capital on one hand, and on the other, we help individuals optimize their career choices</p>
+        <p>We recognize that each industry has its own requirements whether it is Management philosophy, Functional knowledge, Technical expertise, Hiring practice or Compensation norms. Hence, we have developed multiple domain practices to provide industry specific recruitment solutions.</p>
+        <p class="spec"><a href="about.html" class="rm">Read more</a> <a href="about.html" class="com">Comments (3)</a></p>
+    </string>
+    <string name="it_solutions_desc">
+        <p><strong>Zeyden IT Solutions</strong> established in 2009, a professionally managed progressive organization in the sphere of IT Services and
+            Enterprise Leadership Foundation, created mainly to impart IT enabled quality services to meet the new challenges of industry and business.</p>
+        <p><strong>Zeyden IT Solutions</strong> is committed to delivering innovation that helps its clients become high-performance businesses and
+            delivering technology-driven business solutions that meet the strategic objectives of our clients. </p>
+    </string>
+</resources>
