@@ -5,9 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.zeyden.widgets.RobotoTextView
-        android:id="@+id/film_prod_desc"
+    <GridView
+        android:id="@+id/models_grid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:clipChildren="true"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:stretchMode="columnWidth"/>
 
 </RelativeLayout>
