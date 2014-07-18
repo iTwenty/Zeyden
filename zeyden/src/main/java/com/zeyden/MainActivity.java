@@ -90,11 +90,22 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             inFragment = ItSolutionsFragment.newInstance();
             tag = ItSolutionsFragment.TAG;
         }
+        else if ( v.equals( btnEventMgmt ) )
+        {
+            inFragment = EventMgmtFragment.newInstance();
+            tag = EventMgmtFragment.TAG;
+        }
+        else if ( v.equals( btnFilmProd ) )
+        {
+            inFragment = FilmProdFragment.newInstance();
+            tag = FilmProdFragment.TAG;
+        }
         else
         {
             return;
         }
         getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations( android.R.anim.slide_in_left, android.R.anim.slide_out_right )
                 .replace( fragmentContainer.getId(), inFragment, tag )
                 .commit();
         navDrawer.closeDrawers();

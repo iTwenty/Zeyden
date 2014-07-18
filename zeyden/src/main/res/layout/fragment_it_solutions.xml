@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <com.zeyden.widgets.RobotoTextView
         android:id="@+id/it_solutions_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

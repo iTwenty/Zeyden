@@ -17,4 +17,10 @@
         <p><strong>Zeyden IT Solutions</strong> is committed to delivering innovation that helps its clients become high-performance businesses and
             delivering technology-driven business solutions that meet the strategic objectives of our clients. </p>
     </string>
+    <string name="event_mgmt_desc">
+        Event Management
+    </string>
+    <string name="film_prod_desc">
+        Film Production
+    </string>
 </resources>
