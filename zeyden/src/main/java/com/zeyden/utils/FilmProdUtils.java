@@ -16,7 +16,7 @@ public class FilmProdUtils
     // Current total number of images available.
     // Values from 1 upto this number will be replaced in IMAGE_URL
     // to obtain the images.
-    public static final int IMAGE_COUNT = 21;
+    public static final int IMAGE_COUNT = 20;
 
     public static String getUrlForPosition( int position )
     {

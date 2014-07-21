@@ -9,10 +9,10 @@
         android:id="@+id/models_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="auto_fit"
         android:clipChildren="true"
         android:horizontalSpacing="5dp"
         android:verticalSpacing="5dp"
+        android:numColumns="auto_fit"
         android:stretchMode="columnWidth"/>
 
 </RelativeLayout>
