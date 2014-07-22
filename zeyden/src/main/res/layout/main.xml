@@ -26,6 +26,7 @@
             android:text="Placement Services"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/placement_services_light_48"
             style="@style/NavDrawerButton"/>
 
         <Button
@@ -33,6 +34,7 @@
             android:text="IT Solutions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/it_solutions_light_48"
             style="@style/NavDrawerButton"/>
 
         <Button
@@ -40,6 +42,7 @@
             android:text="Event Management"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/event_mgmt_light_48"
             style="@style/NavDrawerButton"/>
 
         <Button
@@ -47,6 +50,7 @@
             android:text="Film Production"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/film_prod_light_48"
             style="@style/NavDrawerButton"/>
 
     </LinearLayout>
