@@ -1,4 +1,4 @@
-package com.zeyden;
+package com.zeyden.placementsvcs;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,20 +6,21 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.zeyden.R;
 import com.zeyden.widgets.RobotoTextView;
 
 /**
  * Created by itwenty on 7/16/14.
  */
-public class PlacementServicesFragment extends Fragment
+public class PlacementSvcsFragment extends Fragment
 {
-    public static final String TAG = PlacementServicesFragment.class.getSimpleName();
+    public static final String TAG = PlacementSvcsFragment.class.getSimpleName();
 
     private RobotoTextView placementServicesDesc;
 
-    public static PlacementServicesFragment newInstance()
+    public static PlacementSvcsFragment newInstance()
     {
-        return new PlacementServicesFragment();
+        return new PlacementSvcsFragment();
     }
 
     @Override

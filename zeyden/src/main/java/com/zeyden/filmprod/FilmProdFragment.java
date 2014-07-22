@@ -1,4 +1,4 @@
-package com.zeyden;
+package com.zeyden.filmprod;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
-import com.zeyden.utils.FilmProdUtils;
+import com.zeyden.R;
 
 /**
  * Created by itwenty on 7/18/14.

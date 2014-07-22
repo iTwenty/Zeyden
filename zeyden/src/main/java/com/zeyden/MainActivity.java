@@ -10,6 +10,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import com.zeyden.eventmgmt.EventMgmtFragment;
+import com.zeyden.filmprod.FilmProdFragment;
+import com.zeyden.itsolutions.ItSolutionsFragment;
+import com.zeyden.placementsvcs.PlacementSvcsFragment;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener
 {
@@ -82,8 +86,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         if ( v.equals( btnPlacement ) )
         {
-            inFragment = PlacementServicesFragment.newInstance();
-            tag = PlacementServicesFragment.TAG;
+            inFragment = PlacementSvcsFragment.newInstance();
+            tag = PlacementSvcsFragment.TAG;
         }
         else if ( v.equals( btnItSolutions ) )
         {
