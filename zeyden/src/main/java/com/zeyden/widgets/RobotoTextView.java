@@ -31,14 +31,14 @@ public class RobotoTextView extends TextView
         switch ( style )
         {
             case Typeface.BOLD:
-                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/Roboto-Bold.ttf" ) );
+                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/roboto-bold.ttf" ) );
                 break;
             case Typeface.ITALIC:
-                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/Roboto-Italic.ttf" ) );
+                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/roboto-italic.ttf" ) );
                 break;
             case Typeface.NORMAL:
             default:
-                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/Roboto-Regular.ttf" ) );
+                super.setTypeface( Typeface.createFromAsset( getContext().getAssets(), "fonts/roboto-regular.ttf" ) );
                 break;
         }
     }
