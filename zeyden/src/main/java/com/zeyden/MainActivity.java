@@ -29,7 +29,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     public void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.main );
+        setContentView( R.layout.activity_main );
         navDrawer = ( DrawerLayout ) findViewById( R.id.nav_drawer );
         fragmentContainer = ( FrameLayout ) findViewById( R.id.fragment_container );
         drawerToggle = new ActionBarDrawerToggle(

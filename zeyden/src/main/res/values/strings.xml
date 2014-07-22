@@ -23,4 +23,8 @@
     <string name="film_prod_desc">
         Film Production
     </string>
+    <string name="btn_placement_svcs_text">Placement Services</string>
+    <string name="btn_it_solutions_text">IT Solutions</string>
+    <string name="btn_event_mgmt_text">Event Management</string>
+    <string name="btn_film_prod_text">Film Production</string>
 </resources>
