@@ -4,5 +4,8 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-
+    
+    <style name="NavDrawerButton" parent="android:Widget.Holo.Button.Borderless">
+        <item name="android:textColor">#cccccc</item>
+    </style>
 </resources>

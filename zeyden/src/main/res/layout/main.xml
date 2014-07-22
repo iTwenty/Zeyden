@@ -18,35 +18,36 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#555555">
+        style="?android:attr/buttonBarStyle"
+        android:background="#222222">
 
         <Button
             android:id="@+id/btn_placement"
             android:text="Placement Services"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="@style/NavDrawerButton"/>
 
         <Button
             android:id="@+id/btn_it_solutions"
             android:text="IT Solutions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="@style/NavDrawerButton"/>
 
         <Button
             android:id="@+id/btn_event_mgmt"
             android:text="Event Management"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="@style/NavDrawerButton"/>
 
         <Button
             android:id="@+id/btn_film_prod"
             android:text="Film Production"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="@style/NavDrawerButton"/>
 
     </LinearLayout>
 
