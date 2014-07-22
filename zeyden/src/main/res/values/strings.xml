@@ -17,14 +17,24 @@
         <p><strong>Zeyden IT Solutions</strong> is committed to delivering innovation that helps its clients become high-performance businesses and
             delivering technology-driven business solutions that meet the strategic objectives of our clients. </p>
     </string>
-    <string name="event_mgmt_desc">
-        Event Management
-    </string>
-    <string name="film_prod_desc">
-        Film Production
-    </string>
+
+    <!-- Nav drawer button text -->
+
     <string name="btn_placement_svcs_text">Placement Services</string>
     <string name="btn_it_solutions_text">IT Solutions</string>
     <string name="btn_event_mgmt_text">Event Management</string>
     <string name="btn_film_prod_text">Film Production</string>
+
+    <!-- End nav drawer button text -->
+    
+    <string-array name="event_types">
+        <item>Corporate</item>
+        <item>Live Concerts</item>
+        <item>Wedding Planning</item>
+        <item>Varmala Themes</item>
+        <item>Celebrity Management</item>
+        <item>Parties</item>
+        <item>Hospitality</item>
+        <item>NGO Event Management</item>
+    </string-array>
 </resources>

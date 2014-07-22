@@ -6,7 +6,7 @@ import com.zeyden.ZeydenApp;
 /**
  * Created by itwenty on 7/18/14.
  */
-public class Utils
+public final class Utils
 {
     private Utils()
     {

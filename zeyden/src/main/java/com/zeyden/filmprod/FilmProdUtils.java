@@ -3,7 +3,7 @@ package com.zeyden.filmprod;
 /**
  * Created by itwenty on 7/18/14.
  */
-public class FilmProdUtils
+public final class FilmProdUtils
 {
     private FilmProdUtils()
     {

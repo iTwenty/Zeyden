@@ -5,9 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.zeyden.widgets.RobotoTextView
-        android:id="@+id/event_mgmt_desc"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/event_mgmt_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/event_mgmt_pager_tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"/>
+
+    </android.support.v4.view.ViewPager>
 
 </RelativeLayout>
