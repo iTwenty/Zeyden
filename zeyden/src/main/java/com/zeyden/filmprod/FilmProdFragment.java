@@ -6,10 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
-import android.widget.ImageView;
-import com.squareup.picasso.Picasso;
+import android.widget.ListView;
 import com.zeyden.R;
+import com.zeyden.widgets.ModelsView;
 
 /**
  * Created by itwenty on 7/18/14.
@@ -23,37 +22,37 @@ public class FilmProdFragment extends Fragment
         return new FilmProdFragment();
     }
 
-    private GridView mModelsGrid;
-    private ModelsGridAdapter mModelsGridAdapter;
+    private ListView          mModelsList;
+    private ModelsListAdapter mModelsListAdapter;
 
     @Override
     public void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
-        mModelsGridAdapter = new ModelsGridAdapter();
+        mModelsListAdapter = new ModelsListAdapter();
     }
 
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
     {
         View v = inflater.inflate( R.layout.fragment_film_prod, container, false );
-        mModelsGrid = ( GridView ) v.findViewById( R.id.models_grid );
-        mModelsGrid.setAdapter( mModelsGridAdapter );
+        mModelsList = ( ListView ) v.findViewById( R.id.models_list );
+        mModelsList.setAdapter( mModelsListAdapter );
         return v;
     }
 
-    private class ModelsGridAdapter extends BaseAdapter
+    private class ModelsListAdapter extends BaseAdapter
     {
         @Override
         public int getCount()
         {
-            return FilmProdUtils.IMAGE_COUNT;
+            return FilmProdUtils.getModelsList().size();
         }
 
         @Override
         public Object getItem( int position )
         {
-            return FilmProdUtils.getUrlForPosition( position + 1 );
+            return FilmProdUtils.getModelsList().get( position );
         }
 
         @Override
@@ -65,22 +64,18 @@ public class FilmProdFragment extends Fragment
         @Override
         public View getView( int position, View convertView, ViewGroup parent )
         {
-            ImageView modelsGridCell;
+            ModelsView modelsView;
             if ( null == convertView )
             {
-                modelsGridCell = ( ImageView ) LayoutInflater.from( parent.getContext() )
-                        .inflate( R.layout.models_grid_cell, parent, false );
+                modelsView = ( ModelsView ) LayoutInflater.from( parent.getContext() )
+                        .inflate( R.layout.models_list_row, parent, false );
             }
             else
             {
-                modelsGridCell = ( ImageView ) convertView;
+                modelsView = ( ModelsView ) convertView;
             }
-            Picasso.with( parent.getContext() )
-                    .load( ( String ) getItem( position ) )
-                    .fit()
-                    .centerCrop()
-                    .into( modelsGridCell );
-            return modelsGridCell;
+            modelsView.updateView( ( Model ) getItem( position ) );
+            return modelsView;
         }
     }
 }
