@@ -15,7 +15,7 @@
 
     <style name="ModelsViewStyle">
         <item name="android:background">@drawable/rounded_rect_bg</item>
-        <item name="android:height">100dp</item>
+        <item name="android:layout_height">100dp</item>
     </style>
 
 </resources>
