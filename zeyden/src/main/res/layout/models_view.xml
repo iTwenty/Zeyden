@@ -3,7 +3,7 @@
 <merge
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/model_image"
         android:layout_width="100dp"
         android:layout_height="100dp"/>

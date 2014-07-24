@@ -2,6 +2,7 @@ package com.zeyden.filmprod;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,14 @@ public class FilmProdFragment extends Fragment
                 modelsView = ( ModelsView ) convertView;
             }
             modelsView.updateView( ( Model ) getItem( position ) );
+            if ( position % 2 == 0 )
+            {
+                modelsView.setImageGravity( Gravity.LEFT );
+            }
+            else
+            {
+                modelsView.setImageGravity( Gravity.RIGHT );
+            }
             return modelsView;
         }
     }
