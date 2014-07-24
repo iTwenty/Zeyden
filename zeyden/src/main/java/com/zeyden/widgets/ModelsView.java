@@ -19,12 +19,12 @@ public class ModelsView extends RelativeLayout
 
     public ModelsView( Context context )
     {
-        this( context, null, 0 );
+        this( context, null, R.attr.modelsViewStyle );
     }
 
     public ModelsView( Context context, AttributeSet attrs )
     {
-        this( context, attrs, 0 );
+        this( context, attrs, R.attr.modelsViewStyle );
     }
 
     public ModelsView( Context context, AttributeSet attrs, int defStyle )
@@ -41,7 +41,7 @@ public class ModelsView extends RelativeLayout
         Picasso.with( getContext() )
                 .load( model.getImageUrl() )
                 .fit()
-                .centerCrop()
+                .centerInside()
                 .into( modelImage );
         modelName.setText( model.getName() );
         modelDesc.setText( model.getDesc() );
